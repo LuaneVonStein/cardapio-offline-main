@@ -1,0 +1,92 @@
+:root{
+  --bg:#f6f9f7;
+  --card:#ffffff;
+  --accent:#0b6b4f;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+html,body,#app{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background:linear-gradient(180deg,#f6fbf8,#ecf8f5);
+  color:#0b1b17;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:1000px;
+  margin:24px auto;
+  padding:16px;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+h1{margin:0;font-size:1.4rem}
+h2{margin:0 0 8px 0;font-size:1rem;color:var(--accent)}
+
+.primary{
+  background:var(--accent);
+  color:#fff;
+  border:0;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 6px 18px rgba(11,107,79,0.08);
+  margin-bottom:16px;
+}
+
+.hidden{display:none}
+
+.form-row{margin-bottom:10px;display:flex;flex-direction:column}
+.form-row label{font-size:0.85rem;margin-bottom:6px;color:var(--muted)}
+.form-row input, .form-row textarea{
+  padding:8px;border-radius:8px;border:1px solid #e6eeea;background:#fcfffd;
+}
+
+.form-actions{display:flex;gap:8px;justify-content:flex-end}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+
+.card-item{
+  background:linear-gradient(180deg,#ffffff,#fbfffc);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 4px 12px rgba(10,10,10,0.04);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.card-item img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#f2f6f4;
+}
+
+.item-row{display:flex;justify-content:space-between;align-items:center}
+.item-title{font-weight:600}
+.item-desc{font-size:0.9rem;color:var(--muted)}
+
+.camera{width:100%;height:240px;background:#000;border-radius:8px;object-fit:cover}
+.preview{width:100%;height:200px;object-fit:cover;border-radius:8px}
+
+.footer{text-align:center;margin-top:18px;color:var(--muted);font-size:0.9rem}
